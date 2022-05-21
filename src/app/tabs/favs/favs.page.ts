@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import {Observable} from "rxjs";
-import {DatabaseService} from "../../services/database.service";
-import {Router} from "@angular/router";
-import {ToastController} from "@ionic/angular";
-import {AuthService} from "../../services/auth.service";
-import {SQLiteService} from "../../services/sqlite.service";
+import {Observable} from 'rxjs';
+import {DatabaseService} from '../../services/database.service';
+import {Router} from '@angular/router';
+import {ToastController} from '@ionic/angular';
+import {AuthService} from '../../services/auth.service';
+import {SQLiteService} from '../../services/sqlite.service';
 
 @Component({
   selector: 'app-favs',
@@ -37,10 +37,6 @@ export class FavsPage implements OnInit {
 
   getFavList(userID: string) {
     return this.db.getRecords(userID);
-  }
-
-  removeFav(userID: string, favItem: any) {
-    this.db.removeFavorite(userID, favItem.link);
   }
 
   ngOnInit() {

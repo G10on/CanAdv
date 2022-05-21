@@ -54,13 +54,13 @@ export class IslandPage {
     if (this.addedToFav) {
       this.db.removeFavorite(this.userID, this.router.url);
       this.addedToFav = false;
-      this.favButtonText = "Add To Favorite";
-      await this.generatePopUp("Removed From Favorite");
+      this.favButtonText = 'Add To Favorite';
+      await this.generatePopUp('Removed From Favorite');
     } else {
-      // this.db.addFavorite(this.userID, this.introTitle.image, this.introTitle.title, this.router.url, this.islandDescription);
+      this.db.addFavorite(this.userID, this.router.url);
       this.addedToFav = true;
-      this.favButtonText = "Remove From Favorite";
-      await this.generatePopUp("Added To Favorite");
+      this.favButtonText = 'Remove From Favorite';
+      await this.generatePopUp('Added To Favorite');
     }
   }
 
