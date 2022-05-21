@@ -1,0 +1,10 @@
+<article class="wtd-content">
+  <h2>{{title}}</h2>
+  <section class="topic" *ngFor="let cont of content | async">
+    <img [src]="cont.imageURL">
+    <div class="topic-text">
+      <h3>{{cont.title}}</h3>
+      <p>{{cont.content}}</p>
+    </div>
+  </section>
+</article>

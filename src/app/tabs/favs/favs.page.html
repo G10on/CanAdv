@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>favs</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <app-intro-title [data]=favIntroBG></app-intro-title>
+  <ion-list>
+    <ion-card *ngFor="let favItem of favList | async">
+      <a href={{favItem.link}}><img src={{favItem.image}}>
+        <ion-item-sliding>
+          <ion-item>
+            <ion-card-header>
+              <ion-card-subtitle>{{favItem.type}}</ion-card-subtitle>
+              <ion-card-title>{{favItem.title}}</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              {{favItem.description}}
+            </ion-card-content>
+          </ion-item>
+          <ion-item-options side="end">
+            <ion-item-option (click)="removeFav({{userID}}, favItem)">{{favItem.slideText}}</ion-item-option>
+          </ion-item-options>
+        </ion-item-sliding>
+      </a>
+    </ion-card>
+  </ion-list>
+
+</ion-content>

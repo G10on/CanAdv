@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;500;700&display=swap');
+
+article h2 {
+  font-weight: 200;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  font-family: "Roboto", monospace;
+  line-height: 1.75;
+}
+
+.island-description {
+  letter-spacing: 0.2em;
+  margin-top: 2em;
+  text-align: center;
+}
+
+.wtd-content {
+  margin-top: 5em;
+}
+
+.wtd-content h2 {
+  padding-bottom: 2em;
+}
+
+@media (max-width: 750px) {
+  .topic {
+    margin-bottom: 2.5em;
+  }
+
+  .topic img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (min-width: 750px) {
+  .topic {
+    margin-bottom: 2.5em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .topic-text {
+    width: 50%;
+    vertical-align: top;
+  }
+
+  .topic img {
+    width: 50%;
+    height: 20em;
+    padding-right: 5%;
+  }
+}
+
+.topic-text > p {
+  line-height: 1.75em;
+  text-align: justify;
+}
+
+.where-to-stay-content {
+  text-align: center;
+  padding-top: 2em;
+}
+
+.where-to-stay-article > h2 {
+  font-size: 1.7em;
+  padding-top: 1.5em;
+}
+
+.place-image {
+  width: 100%;
+  height: auto;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.how-to-get-there-content {
+  padding-top: 3em;
+}
+
+.how-to-get-there-description {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+@media (max-width: 1100px) {
+  .types {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+    margin-bottom: 2em;
+  }
+
+  .rectangle {
+    width: 15em;
+  }
+}
+
+@media (min-width: 1100px) {
+  .types {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2em;
+  }
+}
+
+.transport-type {
+  padding: 1.5em;
+  display: inline-grid;
+}
+
+.rectangle {
+  border-style: groove;
+  border-radius: 30px;
+  padding: 1em;
+}
+
+.rectangle p {
+  font-size: 0.9em;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.img_welcome {
+  height: 20em;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images-ext-2.discordapp.net/external/AHErV46i4s8vDAehogLqK254pdw_Lt0n23IZdPhY-j4/https/www.temperaturadelmar.es/site/images/illustration/tenerife_623.jpg");
+}
+
+.transport-type a {
+  color: black;
+}
+
+.transport-type a:hover {
+  color: rgba(7, 56, 91, 0.55);
+}

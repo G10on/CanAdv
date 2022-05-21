@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>{{(introTitle | async).title}}</ion-title>
+    <ion-buttons slot="end" *ngIf="userID != null">
+      <ion-button fill="solid" shape="round" (click)="checkFavButton()">{{favButtonText}}</ion-button>
+      <ion-icon name="star"></ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen="true">
+  <app-intro-title [data]="introTitle"></app-intro-title>
+
+  <main>
+    <app-island-description [description]="islandDescription"></app-island-description>
+    <app-island-what-to-do title="WHAT TO DO" [content]="islandWhatToDo"></app-island-what-to-do>
+    <app-island-where-to-stay title="WHERE TO STAY" [content]="islandWhereToStay"></app-island-where-to-stay>
+    <app-island-how-to-get-there title="HOW TO GET THERE" [description]="islandHowToGetThereDescription" [content]="islandHowToGetThereContent">
+    </app-island-how-to-get-there>
+  </main>
+</ion-content>

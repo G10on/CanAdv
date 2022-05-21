@@ -1,0 +1,18 @@
+<article class="how-to-get-there-content">
+  <h2>{{title}}</h2>
+
+  <section class="how-to-get-there-description">
+    <p *ngFor="let desc of description | async">{{desc.content}}</p>
+  </section>
+
+  <section class="types" *ngFor="let cont of content | async">
+    <article class="transport-type">
+      <div class="rectangle">
+        <fa-icon [icon]="cont.icon"></fa-icon>
+        <p>{{cont.content}}</p>
+        <a [href]="cont.link">{{cont.title}}</a>
+      </div>
+    </article>
+  </section>
+
+</article>
