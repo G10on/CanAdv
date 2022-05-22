@@ -1,7 +1,7 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>{{(introTitle | async).title}}</ion-title>
-    <ion-buttons slot="end" *ngIf="userID != null">
+    <ion-buttons slot="end" *ngIf="userID == null">
       <ion-button fill="solid" shape="round" (click)="checkFavButton()">{{favButtonText}}</ion-button>
       <ion-icon name="star"></ion-icon>
     </ion-buttons>

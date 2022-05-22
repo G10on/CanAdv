@@ -12,6 +12,7 @@ import {IslandDescriptionPageModule} from "../../pages/island-description/island
 import {IslandWhatToDoPageModule} from "../../pages/island-what-to-do/island-what-to-do.module";
 import {IslandWhereToStayPageModule} from "../../pages/island-where-to-stay/island-where-to-stay.module";
 import {IslandHowToGetTherePageModule} from "../../pages/island-how-to-get-there/island-how-to-get-there.module";
+// import {TabsPageModule} from '../tabs/tabs.module';
 
 @NgModule({
   imports: [
@@ -24,6 +25,7 @@ import {IslandHowToGetTherePageModule} from "../../pages/island-how-to-get-there
     IslandWhatToDoPageModule,
     IslandWhereToStayPageModule,
     IslandHowToGetTherePageModule
+    //TabsPageModule
   ],
   declarations: [IslandPage]
 })

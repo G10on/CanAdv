@@ -6,7 +6,7 @@ import { IslandPage } from './island.page';
 const routes: Routes = [
   {
     path: '',
-    component: IslandPage
+    component: IslandPage,
   }
 ];
 

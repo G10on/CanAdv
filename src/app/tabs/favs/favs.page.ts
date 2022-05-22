@@ -26,7 +26,7 @@ export class FavsPage implements OnInit {
   ) {
     this.favIntroBG = this.service.getDocument('IntroBG', 'Favs');
     this.setUserID();
-    this.favList = this.getFavList(this.userID);
+    // this.favList = this.getFavList(this.userID);
   }
 
   setUserID() {
